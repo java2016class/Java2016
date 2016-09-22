@@ -1,6 +1,6 @@
 package ch7;
 
-public class Prc7_2_All {
+public class Pra7_2_All {
 	public static void main(String[] args) {
 		//7.2.11
 		int arr1[] = { 8, 6, 9, 12, 47, 55, 10 };
