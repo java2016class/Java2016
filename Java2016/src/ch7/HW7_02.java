@@ -1,9 +1,5 @@
 package ch7;
 
-import java.text.NumberFormat;
-
-import javax.swing.text.NumberFormatter;
-
 public class HW7_02 {
 	public static void main(String[] args) {
 		getLottory();
