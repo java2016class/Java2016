@@ -1,4 +1,4 @@
-package ch7;
+package ch07;
 
 public class HW7_02 {
 	public static void main(String[] args) {
@@ -6,10 +6,10 @@ public class HW7_02 {
 	}
 
 	static void getLottory() {
-		int lottoryNum[] = new int[6];
+		int lottoryNum[] = new int[7];
 		int i = 0;
 		boolean repeat = false;
-		while (i < 6) {
+		while (i < 7) {
 			int ran = (int) (Math.random() * 49) + 1;
 			for (int j : lottoryNum) {
 				if (ran == j) {
