@@ -1,4 +1,4 @@
-package ch8;
+package ch08;
 
 public class Pra8_01 {
 	public static void main(String[] args) {
