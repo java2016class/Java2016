@@ -3,9 +3,9 @@ package ch09;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Pra9_02 {
+public class HW9_02 {
 	public static void main(String[] args) {
-		new MakeRnd(11, 20).getRnd2();
+		new MakeRnd(11, 20).getRnd3();
 	}
 }
 
@@ -38,13 +38,12 @@ class MakeRnd {
 		for (int i : numbers) {
 			System.out.printf("%02d ", i);
 		}
-
 	}
 
 	void getRnd2() {
 		int i = 0;
 		Integer arr[] = new Integer[5];
-		
+
 		boolean isRepeat = false;
 		do {
 			Integer rnd = (int) (Math.random() * 20) + 1;
@@ -63,6 +62,25 @@ class MakeRnd {
 		} while (i < 5);
 		Arrays.sort(arr, Collections.reverseOrder());
 		for (int j : arr) {
+			System.out.printf("%02d ", j);
+		}
+	}
+
+	void getRnd3() {
+		int i = 0;
+		do {
+			int rnd = (int) (Math.random() * 20) + 1;
+			if (rnd >= 11 && rnd <= 20) {
+				for (int k = 0; k < numbers.length; k++) {
+					if (numbers[k] == rnd) {
+						break;
+					} else if (numbers[k] != rnd && k == numbers.length - 1) {
+						numbers[i++] = rnd;
+					}
+				}
+			}
+		} while (i < 5);
+		for (int j : numbers) {
 			System.out.printf("%02d ", j);
 		}
 	}
