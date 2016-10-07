@@ -1,14 +1,6 @@
-package ch11;
+package ch11.app06;
 
-public class App11_06 {
-	public static void main(String[] args) {
-		CCircle cir = new CCircle(2.0);
-		cir.setColor("Red");
-		cir.area();
-	}
-}
-
-class CCircle implements iShape2D, iColor {
+public class CCircle implements iShape2D, iColor {
 	double radius;
 	String color;
 
@@ -29,15 +21,4 @@ class CCircle implements iShape2D, iColor {
 		// TODO Auto-generated method stub
 		System.out.println("area = " + PI * radius * radius);
 	}
-
-}
-
-interface iShape2D {
-	double PI = 3.14;
-
-	void area();
-}
-
-interface iColor {
-	void setColor(String str);
 }

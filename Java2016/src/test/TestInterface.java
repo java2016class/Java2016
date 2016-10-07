@@ -28,6 +28,7 @@ class RectImpl implements Rect{
 
 class MultiImpl implements Rect,Cir{
 	//多重繼承(實作)interface，但interface內有同種方法時? show()則被覆蓋其一
+	//解決方法有二，一在設計時明確定義不同方法、二使用不同class個別implements interface
 
 	@Override
 	public void show() {
@@ -64,4 +65,18 @@ interface Cir{
 
 interface Squ{
 	void showAll();
+}
+
+
+class MultiExtendsImpl implements iThird{
+	
+}
+
+interface iFast{
+}
+interface iSecond extends iFast{
+	
+}
+interface iThird extends iSecond{
+	
 }
