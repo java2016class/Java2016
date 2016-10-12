@@ -1,6 +1,6 @@
 package a803;
 
-public class Q35 {
+public class Q35_Error {
 	public static void main(String[] args) {
 		//803題目有誤 int ii=0 應放置於如下位置
 		String[] table = { "aa", "bb", "cc" };

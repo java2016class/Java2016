@@ -1,6 +1,6 @@
 package a803;
 
-public class Q68 { //題目有問題
+public class Q68_Error { //題目有問題
 	public static void main(String[] args) {
 		StringBuilder sb = new StringBuilder();
 		String h1 = "HelloWorld";
