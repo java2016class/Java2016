@@ -27,6 +27,7 @@ public class HW01 {
 
 		boolean exit = false;
 		boolean error = true;
+		
 
 		System.out.println("歡迎使用存提款系統!");
 
