@@ -23,7 +23,10 @@ public class ConnectSQL {
 		// }
 		System.out.println("File loading success.");
 
-		Connections conn = new Connections();
+		Operations conn = new Operations();
+		for (String[] strings : strs2D) {
+			conn.delData(strings);
+		}
 		for (String[] strings : strs2D) {
 			conn.writeData(strings);
 		}
@@ -67,10 +70,10 @@ public class ConnectSQL {
 	}
 }
 
-class Connections {
+class Operations {
 	Connection conn;
 
-	public Connections() {
+	public Operations() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
@@ -105,6 +108,22 @@ class Connections {
 			System.out.println(e.getMessage());
 		}
 		return true;
+	}
+
+	public boolean delData(String[] people) {
+		PreparedStatement ps;
+		try {
+			ps = conn.prepareStatement("DELETE from pra.people WHERE NUMBER=?");
+
+			ps.setString(1, people[0]); // % ¼Ò½k·j´M
+			ps.executeUpdate();
+			System.out.println("Del data");
+			return true;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+			return false;
+		}
 	}
 
 	public boolean readData() {
