@@ -29,14 +29,10 @@ public class Pra16_4_09to10 {
 	}
 
 	static <T> TreeSet<Object> mapToTreeSet(HashMap<T, T> map) {
-		TreeSet<Object> tset = new TreeSet<>();
-		tset.addAll(map.values());
-		return tset;
+		return new TreeSet<>(map.values());
 	}
 
 	static <T> HashSet<Object> mapToHashSet(HashMap<T, T> map) {
-		HashSet<Object> hset = new HashSet<>();
-		hset.addAll(map.keySet());
-		return hset;
+		return new HashSet<>(map.keySet());
 	}
 }
