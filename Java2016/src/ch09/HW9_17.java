@@ -18,7 +18,7 @@ public class HW9_17 {
 		}
 
 		void show() {
-			System.out.printf("¦n¤Í©m¦W:%s\nÁpµ¸¦a§}:%s\n¤½¥q¹q¸Ü:%s\n¤â¾÷¸¹½X:%s\n", name, address, data.company, data.cell);
+			System.out.printf("å¥½å‹å§“å:%s\nè¯çµ¡åœ°å€:%s\nå…¬å¸é›»è©±:%s\næ‰‹æ©Ÿè™Ÿç¢¼:%s\n", name, address, data.company, data.cell);
 		}
 	}
 

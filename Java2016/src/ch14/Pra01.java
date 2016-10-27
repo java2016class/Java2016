@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Pra01 {
 	public static void main(String[] args) throws IOException {
-		String write = "­ë­ë®Õ¾ğxxdadasdsdasfafaffdfdfsdf";
+		String write = "å¿å¿æ ¡æ¨¹xxdadasdsdasfafaffdfdfsdf";
 		char data[] = new char[128];
 		FileWriter writer = new FileWriter("D:\\testJava.txt");
 		writer.write(write);

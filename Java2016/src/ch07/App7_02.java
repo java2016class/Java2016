@@ -4,7 +4,7 @@ public class App7_02 {
 public static void main(String[] args) {
 	int i;
 	i = star(3);
-	System.out.println("¦L¥X"+i+"­Ó¬P¬P");
+	System.out.println("å°å‡º"+i+"å€‹æ˜Ÿæ˜Ÿ");
 }
 
 public static int star(int n){

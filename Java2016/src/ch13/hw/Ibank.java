@@ -8,5 +8,5 @@ public interface Ibank {
 	String showName();
 	
 	void posit(long cash);
-	void deposit(long cash) throws BankException; //­Y­n¨Ï¥ÎException ³o¸Ì­n¥ı¥´
+	void deposit(long cash) throws BankException; //è‹¥è¦ä½¿ç”¨Exception é€™è£¡è¦å…ˆæ‰“
 }

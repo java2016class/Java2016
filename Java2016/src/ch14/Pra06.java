@@ -9,7 +9,7 @@ public class Pra06 {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		FileInputStream fi = new FileInputStream("D:\\android.png");
 		FileOutputStream fo = new FileOutputStream("D:\\android_copy.png");
-		//�ɮפw�s�b�h�л\
+		//檔案已存在則覆蓋
 		byte[] data = new byte[fi.available()];
 
 		fi.read(data);

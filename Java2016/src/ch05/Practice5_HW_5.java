@@ -7,11 +7,11 @@ public class Practice5_HW_5 {
 		Scanner sc = new Scanner(System.in);
 		int x = 1, sum = 0;
 		do {
-			System.out.print("½Ð¿é¤J²Ä" + x + "¦¸¼Æ­È: ");
+			System.out.print("è«‹è¼¸å…¥ç¬¬" + x + "æ¬¡æ•¸å€¼: ");
 			sum += sc.nextInt();
 			x++;
 		} while (x < 6);
 
-		System.out.println("¿é¤J5¦¸ªºÁ`¦X¬°:" + sum + " ; ¥­§¡¬°:" + sum / 5.0f);
+		System.out.println("è¼¸å…¥5æ¬¡çš„ç¸½åˆç‚º:" + sum + " ; å¹³å‡ç‚º:" + sum / 5.0f);
 	}
 }

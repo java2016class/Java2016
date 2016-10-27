@@ -2,11 +2,11 @@ package a803;
 
 public class Q35_Error {
 	public static void main(String[] args) {
-		//803ÃD¥Ø¦³»~ int ii=0 À³©ñ¸m©ó¦p¤U¦ì¸m
+		//803é¡Œç›®æœ‰èª¤ int ii=0 æ‡‰æ”¾ç½®æ–¼å¦‚ä¸‹ä½ç½®
 		String[] table = { "aa", "bb", "cc" };
 		int ii = 0;
 		for (String string : table) {
-			// int ii=0; ¿ù»~¦ì¸m ¹s¿é¥X
+			// int ii=0; éŒ¯èª¤ä½ç½® é›¶è¼¸å‡º
 			while (ii < table.length) {
 				System.out.println(ii);
 				ii++;

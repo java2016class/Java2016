@@ -1,28 +1,28 @@
 package test;
 
 public class StaticTest {
-	int test1 = 0; //¹ê¨ÒÅÜ¼Æ
-	static int test2 = 12; //Ãş§OÅÜ¼Æ
+	int test1 = 0; //å¯¦ä¾‹è®Šæ•¸
+	static int test2 = 12; //é¡åˆ¥è®Šæ•¸
 
 	public static void main(String[] args) { 
-		TestS.test3 = 12; //static ¥iª½±µ³Q©I¥s;
+		TestS.test3 = 12; //static å¯ç›´æ¥è¢«å‘¼å«;
 		
 		TestS test1 = new TestS();
 		test1.test3++;
 		TestS test2 = new TestS();
 		test2.test3++;
-		System.out.println(TestS.test3); //¤£¦Pªº°Ñ¦Ò¦ì¸m¡A¦ı¨Ï¥ÎÃş§OÅÜ¼ÆªºÃö«Y¡A¨Ï±o­È¥i¥H¦@¥Î¡A³oÃäªº­È¨q¥X¨Ó¬O14
+		System.out.println(TestS.test3); //ä¸åŒçš„åƒè€ƒä½ç½®ï¼Œä½†ä½¿ç”¨é¡åˆ¥è®Šæ•¸çš„é—œä¿‚ï¼Œä½¿å¾—å€¼å¯ä»¥å…±ç”¨ï¼Œé€™é‚Šçš„å€¼ç§€å‡ºä¾†æ˜¯14
 	}
 
-	public static void show() { //Ãş§O¨ç¼Æ¡A¥iª½±µ©I¥s
-//		System.out.println(test1);//static µLªkª½±µ©I¥s ¹ê¨ÒÅÜ¼Æ
+	public static void show() { //é¡åˆ¥å‡½æ•¸ï¼Œå¯ç›´æ¥å‘¼å«
+//		System.out.println(test1);//static ç„¡æ³•ç›´æ¥å‘¼å« å¯¦ä¾‹è®Šæ•¸
 		System.out.println(test2);
-//		shows();//static µLªkª½±µ©I¥s ¹ê¨Ò¨ç¼Æ
+//		shows();//static ç„¡æ³•ç›´æ¥å‘¼å« å¯¦ä¾‹å‡½æ•¸
 		showss();
-//		this.test1 = 0;   //Ãş§O¨ç¼ÆµLªk¨Ï¥ÎthisÃöÁä¦r
+//		this.test1 = 0;   //é¡åˆ¥å‡½æ•¸ç„¡æ³•ä½¿ç”¨thisé—œéµå­—
 	}
 	public void shows(){
-		this.test1 = 0;   //¹ê¨Ò¨ç¼Æ¥i¨Ï¥Îthis
+		this.test1 = 0;   //å¯¦ä¾‹å‡½æ•¸å¯ä½¿ç”¨this
 	}
 	public static void showss(){
 		
@@ -31,5 +31,5 @@ public class StaticTest {
 }
 
 class TestS {
-	static int test3 = 10; //Ãş§OÅÜ¼Æ
+	static int test3 = 10; //é¡åˆ¥è®Šæ•¸
 }

@@ -23,7 +23,7 @@ public class HW7_02 {
 			}
 			lottoryNum[i++] = ran;
 		}
-		System.out.print("¼Ö³z¸¹½X : ");
+		System.out.print("æ¨‚é€è™Ÿç¢¼ : ");
 		for (int j : lottoryNum) {
 			System.out.printf("%02d ", j);
 		}

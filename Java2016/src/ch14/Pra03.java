@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class Pra03 {
 	public static void main(String[] args) throws IOException {
-		String write = "­ë­ë®Õ¾ğxxdadasdsdasfafaffdfdfsdf";
+		String write = "å¿å¿æ ¡æ¨¹xxdadasdsdasfafaffdfdfsdf";
 		FileWriter writer = new FileWriter("D:\\testJava.txt");
 		BufferedWriter bw = new BufferedWriter(writer);
 		bw.write(write);

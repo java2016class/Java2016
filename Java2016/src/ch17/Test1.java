@@ -17,6 +17,6 @@ public class Test1 {
 		frm.setSize(220,150);
 		frm.setVisible(true);
 		
-//		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); JFrameªº¥\¯à
+//		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); JFrameçš„åŠŸèƒ½
 	}
 }

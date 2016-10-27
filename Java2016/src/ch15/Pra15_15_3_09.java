@@ -1,19 +1,19 @@
 package ch15;
 
 public class Pra15_15_3_09 {
-	// ²ßÃD²Ä¤Q¤­ÃD
+	// ç¿’é¡Œç¬¬åäº”é¡Œ
 	public static void main(String[] args) {
 		// Thread t1 = new Thread(createT11("1", 1000));
 		// Thread t2 = new Thread(createT11("2", 2500));
 		// t1.start();
 		// t2.start();
-		// ¤§¤@
+		// ä¹‹ä¸€
 
 		Thread t1 = new Thread(createT11("Hello ", 1000));
 		Thread t2 = new Thread(createT11("Good bye ", 2500));
 		t1.start();
 		t2.start();
-		// ¤§¤G
+		// ä¹‹äºŒ
 		
 		
 
@@ -44,7 +44,7 @@ class T11 implements Runnable {
 		// e.printStackTrace();
 		// }
 		// System.out.println("Thread" + name + " is running...");
-		// } //¤§¤@
+		// } //ä¹‹ä¸€
 		for (int i = 0; i < 5; i++) {
 			try {
 				Thread.sleep(seconds);
@@ -53,7 +53,7 @@ class T11 implements Runnable {
 				e.printStackTrace();
 			}
 			System.out.println(name + (i+1));
-		} // ¤§¤G
+		} // ä¹‹äºŒ
 	}
 
 }

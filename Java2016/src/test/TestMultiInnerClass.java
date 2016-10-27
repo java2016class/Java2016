@@ -8,7 +8,7 @@ public class TestMultiInnerClass {
 
 	}
 
-	public static class FirstClass {//¤º³¡class­n¥[static¡A¦ı¬O³o¼Ë·|¼W¥[°O¾ĞÅé¥e¥Î²v
+	public static class FirstClass {//å…§éƒ¨classè¦åŠ staticï¼Œä½†æ˜¯é€™æ¨£æœƒå¢åŠ è¨˜æ†¶é«”å ç”¨ç‡
 		void show() {
 			System.out.println("First class");
 		}
@@ -22,7 +22,7 @@ public class TestMultiInnerClass {
 
 }
 
-class ThirdClass {//¼g¦b¥Dclass¤§¥~ªº¤Ş¥Î¤£¥Î¼gstatic¡Aµ¥¦P¥t¥~¤@­Ó.javaÀÉ®×¡A¦ı¤£¯à¥Î¤½¶}¨Ó·m¦û¥Dclassªº¦a¦ì
+class ThirdClass {//å¯«åœ¨ä¸»classä¹‹å¤–çš„å¼•ç”¨ä¸ç”¨å¯«staticï¼Œç­‰åŒå¦å¤–ä¸€å€‹.javaæª”æ¡ˆï¼Œä½†ä¸èƒ½ç”¨å…¬é–‹ä¾†æ¶ä½”ä¸»classçš„åœ°ä½
 	void show() {
 		System.out.println("Third class");
 	}

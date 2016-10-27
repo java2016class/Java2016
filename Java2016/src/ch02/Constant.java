@@ -4,7 +4,7 @@ public class Constant {
 
 	public static void main(String args[]) {
 
-		// ½Ð°È¥²°O±o·¸¦ì³B²z¬°¥Ñ¥¿Âà­t(32767+1>>>-32768)
+		// è«‹å‹™å¿…è¨˜å¾—æº¢ä½è™•ç†ç‚ºç”±æ­£è½‰è² (32767+1>>>-32768)
 		long longNum = java.lang.Long.MAX_VALUE;
 		int intNum = Integer.MAX_VALUE;
 		short shortNum = Short.MAX_VALUE;

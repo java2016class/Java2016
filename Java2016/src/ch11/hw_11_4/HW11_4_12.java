@@ -38,7 +38,7 @@ class CStu implements Test {
 	public void best() {
 		// TODO Auto-generated method stub
 		bestGrade = math > english;
-		System.out.printf("%sªº%s¤ñ%s¦n\n", name, (bestGrade ? "¼Æ¾Ç" : "­^¤å"), (!bestGrade ? "¼Æ¾Ç" : "­^¤å"));
+		System.out.printf("%sçš„%sæ¯”%så¥½\n", name, (bestGrade ? "æ•¸å­¸" : "è‹±æ–‡"), (!bestGrade ? "æ•¸å­¸" : "è‹±æ–‡"));
 	}
 
 	@Override
@@ -47,9 +47,9 @@ class CStu implements Test {
 		failedMath = math < 60;
 		failedEnglish = english < 60;
 		if (failedMath) {
-			System.out.printf("%sªº%s·í±¼¤F\n", name, "¼Æ¾Ç");
+			System.out.printf("%sçš„%sç•¶æŽ‰äº†\n", name, "æ•¸å­¸");
 		} else if (failedEnglish) {
-			System.out.printf("%sªº%s·í±¼¤F\n", name, "­^¤å");
+			System.out.printf("%sçš„%sç•¶æŽ‰äº†\n", name, "è‹±æ–‡");
 		}
 	}
 
@@ -57,7 +57,7 @@ class CStu implements Test {
 	public void showData() {
 		// TODO Auto-generated method stub
 		average = this.average();
-		System.out.println("©m¦W:" + name + "\n¼Æ¾Ç¦¨ÁZ:" + math + "\n­^¤å¦¨ÁZ:" + english + "\n¥­§¡¦¨ÁZ:" + average);
+		System.out.println("å§“å:" + name + "\næ•¸å­¸æˆç¸¾:" + math + "\nè‹±æ–‡æˆç¸¾:" + english + "\nå¹³å‡æˆç¸¾:" + average);
 	}
 
 	@Override

@@ -6,9 +6,9 @@ public class HW7_01 {
 	public static void main(String[] args) {
 		double x,y;
 		Scanner sc = new Scanner(System.in);
-		System.out.print("½Ð¿é¤Jªø«×: ");
+		System.out.print("è«‹è¼¸å…¥é•·åº¦: ");
 		x = sc.nextDouble();
-		System.out.print("\n½Ð¿é¤J¼e«×: ");
+		System.out.print("\nè«‹è¼¸å…¥å¯¬åº¦: ");
 		y = sc.nextDouble();
 		getTriangleArea(x, y);
 	}

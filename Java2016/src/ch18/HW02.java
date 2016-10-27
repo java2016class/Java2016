@@ -16,15 +16,16 @@ public class HW02 extends Frame {
 	public static Frame frm;
 
 	public HW02() {
+		setLayout(null);
 		setTitle("Hello : " + i);
-		// setSize(500, 500);
-		setBounds(200, 200, 400, 500);
+		setSize(500, 500);
+		// setBounds(200, 200, 400, 500);
+		label = getLabel();
+		add(label);
 		event = new BtnEvent();
 		add(getBtn("Yellow", 1));
 		add(getBtn("Green", 2));
 		add(getBtn("Exit", 3));
-		label = getLabel();
-		add(label);
 		addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
 				System.exit(0);
@@ -41,7 +42,8 @@ public class HW02 extends Frame {
 	public Label getLabel() {
 		Label lb = new Label("label");
 		lb.setSize(80, 20);
-		lb.setLocation(0, 300);
+		lb.setLocation(20, 250);
+		lb.setBackground(Color.lightGray);
 		return lb;
 	}
 

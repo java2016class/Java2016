@@ -7,7 +7,7 @@ public class Practice5_HW_4 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("½Ð¿é¤J0~100¤ºªº¼Æ­È: ");
+		System.out.print("è«‹è¼¸å…¥0~100å…§çš„æ•¸å€¼: ");
 		int score = sc.nextInt();
 		switch (score / 10) {
 		case 10:

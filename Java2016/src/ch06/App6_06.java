@@ -2,8 +2,8 @@ package ch06;
 
 public class App6_06 {
 	public static void main(String[] args) {
-		//¤ñ¸û«ü¦Vªº°Ñ¦Ò¦ì¸m
-		//C»y¨¥Á¿ªº«ü¼Ğ¤ñ¸û¸Ô²Ó
+		//æ¯”è¼ƒæŒ‡å‘çš„åƒè€ƒä½ç½®
+		//Cèªè¨€è¬›çš„æŒ‡æ¨™æ¯”è¼ƒè©³ç´°
 		int a[] = { 2, 7, 6, 3, 8, 4 };
 		int b[] = { 2, 7, 6, 3, 8, 4 };
 		int c[] = a;

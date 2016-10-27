@@ -2,7 +2,7 @@ package test.protecttest;
 
 public class Father extends Try {
 	public static void main(String[] args) {
-		System.out.println(my); //¦P­Ópackage¥H¤W¤´¥iÄ~©Ó¡A¦ı¬O¤£¦Ppackage´N¤£¥i¥H
+		System.out.println(my); //åŒå€‹packageä»¥ä¸Šä»å¯ç¹¼æ‰¿ï¼Œä½†æ˜¯ä¸åŒpackageå°±ä¸å¯ä»¥
 //		System.out.println(you);
 	}
 }

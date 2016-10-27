@@ -7,7 +7,7 @@ public class Ex9_01 {
 		System.out.println(add(10,20,30));
 	}
 
-	static int add(int... a) { //¤£©w­Ó¼Æ ¤£½T©w¼Æ¶qªº®É­Ô¨Ï¥Î¡A¦P­Ó¤èªk¤¤¥u¯à¥Î¤@¦¸
+	static int add(int... a) { //ä¸å®šå€‹æ•¸ ä¸ç¢ºå®šæ•¸é‡çš„æ™‚å€™ä½¿ç”¨ï¼ŒåŒå€‹æ–¹æ³•ä¸­åªèƒ½ç”¨ä¸€æ¬¡
 		int sum = 0;
 		for (int i : a) {
 			sum += i;

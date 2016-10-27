@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Practice4_3_18 {
 	public static void main(String[] args) {
-		System.out.print("½Ğ¿é¤J¶ê²y¥b®|:");
+		System.out.print("è«‹è¼¸å…¥åœ“çƒåŠå¾‘:");
 		Scanner sc = new Scanner(System.in);
 		int number = sc.nextInt();
-		System.out.println("¶ê²yÅé¿n:" + (double)4 / 3 * Math.PI * Math.pow(number, 3));
-		System.out.println("¶ê²yÅé¿n:" + (double)4 / 3 * 3.141592654 * number*number*number);
+		System.out.println("åœ“çƒé«”ç©:" + (double)4 / 3 * Math.PI * Math.pow(number, 3));
+		System.out.println("åœ“çƒé«”ç©:" + (double)4 / 3 * 3.141592654 * number*number*number);
 		sc.close();
 	}
 }

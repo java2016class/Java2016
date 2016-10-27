@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Practice4_3_13 {
 public static void main(String[] args) {
-	System.out.print("½Ğ¿é¤JÄá¤ó·Å«×:");
+	System.out.print("è«‹è¼¸å…¥æ”æ°æº«åº¦:");
 	Scanner sc = new Scanner(System.in);
 	double number = sc.nextDouble();
-	System.out.println("µØ¤ó·Å«×:"+(((double)9/5)*number+32));
+	System.out.println("è¯æ°æº«åº¦:"+(((double)9/5)*number+32));
 	sc.close();
-	System.out.printf("¤¤¬î¬O%d¤ë%d,¶R¤F%1.1f­Ó¤ë»æ",8,15,3.5);
+	System.out.printf("ä¸­ç§‹æ˜¯%dæœˆ%d,è²·äº†%1.1få€‹æœˆé¤…",8,15,3.5);
 }
 }

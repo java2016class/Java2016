@@ -8,7 +8,7 @@ public class App5_06 {
 		Scanner sc = new Scanner(System.in);
 		int n, i = 1, sum=0;
 		do {
-			System.out.print("½Ð¿é¤J¤@­Ó¼Æ­È¥H­pºâ²Ö¥[­È:");
+			System.out.print("è«‹è¼¸å…¥ä¸€å€‹æ•¸å€¼ä»¥è¨ˆç®—ç´¯åŠ å€¼:");
 			n = sc.nextInt();
 		} while (n < 1);
 
@@ -16,7 +16,7 @@ public class App5_06 {
 			sum += i++;
 		while (i < n);
 
-		System.out.println("²Ö¥[­È = " + sum);
+		System.out.println("ç´¯åŠ å€¼ = " + sum);
 	}
 
 }

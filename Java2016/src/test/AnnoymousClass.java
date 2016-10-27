@@ -7,7 +7,7 @@ public class AnnoymousClass {
 				this.num = num;
 				System.out.println("num = " + num);
 			}
-		}).setNum(5); //¨Ï¥Î°Î¦WÃş§Oªº¤è¦¡¡A¤º³¡«Ø¥ß¤@­Ó¥u¯à¥Î¤@¦¸ªº¤èªk
+		}).setNum(5); //ä½¿ç”¨åŒ¿åé¡åˆ¥çš„æ–¹å¼ï¼Œå…§éƒ¨å»ºç«‹ä¸€å€‹åªèƒ½ç”¨ä¸€æ¬¡çš„æ–¹æ³•
 	}
 
 	static class Caaa {

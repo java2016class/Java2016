@@ -9,7 +9,7 @@ public class TestTryCatch {
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("Exception:" + e.getMessage());
-		} finally {// ¤£½×¦³¨S¦³¿ù»~³£°õ¦æ³o¬q
+		} finally {// ä¸è«–æœ‰æ²’æœ‰éŒ¯èª¤éƒ½åŸ·è¡Œé€™æ®µ
 			System.out.println("Hello");
 		}
 	}

@@ -8,19 +8,19 @@ public class Practice5_HW_2 {
 		String tempUser, tempPass;
 		Scanner sc = new Scanner(System.in);
 		while (true) {
-			System.out.print("½Ð¿é¤J¨Ï¥ÎªÌ±b¸¹: ");
+			System.out.print("è«‹è¼¸å…¥ä½¿ç”¨è€…å¸³è™Ÿ: ");
 			tempUser = sc.nextLine();
 			System.out.println();
-			System.out.print("½Ð¿é¤J¨Ï¥ÎªÌ±K½X: ");
+			System.out.print("è«‹è¼¸å…¥ä½¿ç”¨è€…å¯†ç¢¼: ");
 			tempPass = sc.nextLine();
 			System.out.println();
 			if (tempUser.equals(user) && tempPass.equals(pass)) {
-				System.out.println("Åwªïµn¤J");
+				System.out.println("æ­¡è¿Žç™»å…¥");
 				break;
 			} else if (!tempUser.equals(user)) {
-				System.out.println("±b¸¹¦³»~");
+				System.out.println("å¸³è™Ÿæœ‰èª¤");
 			} else {
-				System.out.println("±K½X¦³»~");
+				System.out.println("å¯†ç¢¼æœ‰èª¤");
 			}
 			tempUser = "";
 			tempPass = "";

@@ -6,11 +6,15 @@ package ch18;
  */
 
 import java.awt.Button;
+import java.awt.Color;
 import java.awt.Frame;
 import java.awt.Label;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Arrays;
@@ -21,20 +25,21 @@ import java.util.List;
  * 
  * @author Odise
  */
-public class IdNameListFrame extends Frame {
+public class IdNameListFrame2 extends Frame {
 
 	// A123456789 is correct; A WZIO =10 B 11 C 12
 	static TextField field;
 	static Label label;
+	static Button btn;
 
 	public static void main(String[] args) {
-		IdNameListFrame list = new IdNameListFrame();
+		IdNameListFrame2 list = new IdNameListFrame2();
 		list.setVisible(true);
 
-//		System.out.println("身分證檢查結果: " + isChecked("a123456789"));
+		// System.out.println("身分證檢查結果: " + isChecked("a123456789"));
 	}
 
-	public IdNameListFrame() {
+	public IdNameListFrame2() {
 		setTitle("身分驗證");
 		setLayout(null);
 		setSize(300, 150);
@@ -43,10 +48,11 @@ public class IdNameListFrame extends Frame {
 		field.setSize(100, 30);
 		field.setText("a123456789");
 
-		Button btn = new Button("Check");
+		btn = new Button("Check");
 		btn.setLocation(140, 50);
 		btn.setSize(50, 30);
 		btn.addActionListener(getListener());
+		btn.addMouseListener(getMouseListener());
 
 		label = new Label("id: ");
 		label.setLocation(80, 100);
@@ -73,6 +79,43 @@ public class IdNameListFrame extends Frame {
 			}
 		};
 		return listener;
+	}
+
+	static MouseListener getMouseListener() {
+		MouseListener mouse = new MouseListener() {
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mousePressed(MouseEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+				// TODO Auto-generated method stub
+				btn.setBackground(Color.green);
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				// TODO Auto-generated method stub
+				btn.setBackground(Color.red);
+
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+		};
+		return mouse;
 	}
 
 	static boolean isChecked(String id) {

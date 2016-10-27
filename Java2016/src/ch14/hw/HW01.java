@@ -29,7 +29,7 @@ public class HW01 {
 		boolean error = true;
 		
 
-		System.out.println("Åwªï¨Ï¥Î¦s´£´Ú¨t²Î!");
+		System.out.println("æ­¡è¿ä½¿ç”¨å­˜ææ¬¾ç³»çµ±!");
 
 		try {
 			if (!file.exists()) {
@@ -54,32 +54,32 @@ public class HW01 {
 
 		while (true) {
 			error = true;
-			System.out.print("½Ğ¿é¤J¥\¯à¥N½X(1)¦s´Ú(2)´£´Ú(3)Åã¥Ü¾lÃB(4)Â÷¶} : ");
+			System.out.print("è«‹è¼¸å…¥åŠŸèƒ½ä»£ç¢¼(1)å­˜æ¬¾(2)ææ¬¾(3)é¡¯ç¤ºé¤˜é¡(4)é›¢é–‹ : ");
 			switch (sc.nextLine()) {
 			case "1":
-				System.out.print("½Ğ¿é¤J¦s´Úª÷ÃB : ");
+				System.out.print("è«‹è¼¸å…¥å­˜æ¬¾é‡‘é¡ : ");
 				try {
 					acc.deposit(sc.nextInt());
-					System.out.println("¾lÃB:" + acc.showBalance());
+					System.out.println("é¤˜é¡:" + acc.showBalance());
 					oos.writeObject(acc);
 					oos.flush();
 				} catch (NumberFormatException e) {
-					System.out.println("½Ğ­«·s¾Ş§@");
+					System.out.println("è«‹é‡æ–°æ“ä½œ");
 				}
 				error = false;
 				break;
 			case "2":
-				System.out.print("½Ğ¿é¤J¨ú´Úª÷ÃB : ");
+				System.out.print("è«‹è¼¸å…¥å–æ¬¾é‡‘é¡ : ");
 				try {
 					if (acc.withdrawal(sc.nextInt()) != -1) {
-						System.out.println("¾lÃB:" + acc.showBalance());
+						System.out.println("é¤˜é¡:" + acc.showBalance());
 						oos.writeObject(acc);
 						oos.flush();
 					} else
-						System.out.println("¾lÃB¤£¨¬¡A½Ğ­«·s¾Ş§@");
+						System.out.println("é¤˜é¡ä¸è¶³ï¼Œè«‹é‡æ–°æ“ä½œ");
 
 				} catch (NumberFormatException e) {
-					System.out.println("½Ğ­«·s¾Ş§@");
+					System.out.println("è«‹é‡æ–°æ“ä½œ");
 				}
 				error = false;
 				break;
@@ -90,7 +90,7 @@ public class HW01 {
 				exit = true;
 				break;
 			default:
-				System.out.println("¥N½X¿ù»~¡A³Â·Ğ½Ğ­«·s¿é¤J¥N½X");
+				System.out.println("ä»£ç¢¼éŒ¯èª¤ï¼Œéº»ç…©è«‹é‡æ–°è¼¸å…¥ä»£ç¢¼");
 				break;
 			}
 			if (exit)
@@ -98,7 +98,7 @@ public class HW01 {
 			if (!error)
 				System.out.print(sc.nextLine());
 		}
-		System.out.println("ÁÂÁÂ¥úÁ{");
+		System.out.println("è¬è¬å…‰è‡¨");
 		oos.close();
 		ois.close();
 	}

@@ -7,17 +7,17 @@ public class App15_2 extends Thread {
 		CTest test2 = new CTest("Try2");
 		System.out.println(test.getPriority());
 		System.out.println(test2.getPriority());
-		test.start();// ¨Ï¥Îstart¤~¥i±N§ï¼gªºrun¥á¤J±Æ§Ç°õ¦æ¡A¤]¤~·|¥X²{¥æ¿ù°õ¦æªºª¬ºA
-		test2.start();// ª½±µ°õ¦ærun«h¶È¶È¥u¬O¶]µ{§Ç¡A¥ç§YA°õ¦æ§¹¤~´«B
-		// ¨Ï¥ÎThread(class)ÁÙ¬ORunnable(interface)? ´N¬İ¸ÓÃş§O¦³¨S¦³Ä~©Ó¨ä¥Lclass¨M©w
-		// «eªÌ¬O§ï¼grun«áªÌ¬O¹ê§@run
-		// °õ¦æ§Ç¥Ñwait()­áµ²®É¥i¥Înotify()¸Ñ­á
-		// InterruptedException ¤¤Â_ªºException
-		// °õ¦æstop§Y·|¾P·´Thread
-		// join ¤]·|²£¥Í­áµ²°õ¦æºüªºª¬ºA¡A¥iÅı­ì¨Óªº°õ¦æºü¼È°±ª½¨ì³o­Ó°õ¦æ§Çµ²§ô
-		// Priority 1~10 10¬°³ÌÀu¥ı°õ¦æ
-		// Synchronized ¦P¨B¡A¦h­Ó°õ¦æºü¦s¨ú¦P¤@ÅÜ¼Æ®É®e©ö²£¥Í¤£¥i¹w´Á¤§¿ù»~¡A©Ò¥H»İ­n¨Ï¥Îsync¶i¦æ¦P¨B
-		// ¤@¦¸¥u¤¹³\¤@­Ó°õ¦æºü¶i¤J¦s¨ú
+		test.start();// ä½¿ç”¨startæ‰å¯å°‡æ”¹å¯«çš„runä¸Ÿå…¥æ’åºåŸ·è¡Œï¼Œä¹Ÿæ‰æœƒå‡ºç¾äº¤éŒ¯åŸ·è¡Œçš„ç‹€æ…‹
+		test2.start();// ç›´æ¥åŸ·è¡Œrunå‰‡åƒ…åƒ…åªæ˜¯è·‘ç¨‹åºï¼Œäº¦å³AåŸ·è¡Œå®Œæ‰æ›B
+		// ä½¿ç”¨Thread(class)é‚„æ˜¯Runnable(interface)? å°±çœ‹è©²é¡åˆ¥æœ‰æ²’æœ‰ç¹¼æ‰¿å…¶ä»–classæ±ºå®š
+		// å‰è€…æ˜¯æ”¹å¯«runå¾Œè€…æ˜¯å¯¦ä½œrun
+		// åŸ·è¡Œåºç”±wait()å‡çµæ™‚å¯ç”¨notify()è§£å‡
+		// InterruptedException ä¸­æ–·çš„Exception
+		// åŸ·è¡Œstopå³æœƒéŠ·æ¯€Thread
+		// join ä¹Ÿæœƒç”¢ç”Ÿå‡çµåŸ·è¡Œç·’çš„ç‹€æ…‹ï¼Œå¯è®“åŸä¾†çš„åŸ·è¡Œç·’æš«åœç›´åˆ°é€™å€‹åŸ·è¡ŒåºçµæŸ
+		// Priority 1~10 10ç‚ºæœ€å„ªå…ˆåŸ·è¡Œ
+		// Synchronized åŒæ­¥ï¼Œå¤šå€‹åŸ·è¡Œç·’å­˜å–åŒä¸€è®Šæ•¸æ™‚å®¹æ˜“ç”¢ç”Ÿä¸å¯é æœŸä¹‹éŒ¯èª¤ï¼Œæ‰€ä»¥éœ€è¦ä½¿ç”¨syncé€²è¡ŒåŒæ­¥
+		// ä¸€æ¬¡åªå…è¨±ä¸€å€‹åŸ·è¡Œç·’é€²å…¥å­˜å–
 	}
 }
 

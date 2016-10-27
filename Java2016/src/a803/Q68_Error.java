@@ -1,6 +1,6 @@
 package a803;
 
-public class Q68_Error { //ÃD¥Ø¦³°İÃD
+public class Q68_Error { //é¡Œç›®æœ‰å•é¡Œ
 	public static void main(String[] args) {
 		StringBuilder sb = new StringBuilder();
 		String h1 = "HelloWorld";

@@ -4,7 +4,7 @@ import a803.Q187;
 
 public class TestConstructor {
 	public static void main(String[] args) {
-		new Q187(); //«Øºc¤l¦p¤w«Ø¥ß«h·Q©I¥sªÅ«Øºc¤l´N¥²¶·³]©w
+		new Q187(); //å»ºæ§‹å­å¦‚å·²å»ºç«‹å‰‡æƒ³å‘¼å«ç©ºå»ºæ§‹å­å°±å¿…é ˆè¨­å®š
 	}
 	
 }

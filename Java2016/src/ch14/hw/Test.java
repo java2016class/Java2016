@@ -9,17 +9,17 @@ package ch14.hw;
 			// TODO Auto-generated method stub
 
 			int oper = 0, amt = 0;
-			System.out.print("½Ğ¿ï¾Ü(1) ¦s¤J  (2) ¤ä¥X  (3) Â÷¶} ¡G");
+			System.out.print("è«‹é¸æ“‡(1) å­˜å…¥  (2) æ”¯å‡º  (3) é›¢é–‹ ï¼š");
 			Scanner scn = new Scanner(System.in);
 			oper = scn.nextInt();
 
 			while (oper != 3) {
 				// System.out.println("The function code is " + op);
-				System.out.print("½Ğ¿é¤J±ı¡y¦s¤J¡z©Î¡y¨ú´Ú¡zªºª÷ÃB¡G");
+				System.out.print("è«‹è¼¸å…¥æ¬²ã€å­˜å…¥ã€æˆ–ã€å–æ¬¾ã€çš„é‡‘é¡ï¼š");
 				amt = scn.nextInt();
 				//System.out.print("The amount is " + amt);
 				if(amt < 0){
-					System.out.println("ª÷ÃB¤£¥i¬°­t¼Æ!");
+					System.out.println("é‡‘é¡ä¸å¯ç‚ºè² æ•¸!");
 					continue;
 				}
 
@@ -32,7 +32,7 @@ package ch14.hw;
 					myacnt.deposite(amt);
 				} else {
 					if ((myacnt.getBalance() - 100) < 0) {
-						System.out.println("±zªº¦s´Ú¾lÃB¤£¨¬¡A¦¹¦¸µLªk¤ä¥Xª÷ÃB " + amt + " ¤¸ !!");
+						System.out.println("æ‚¨çš„å­˜æ¬¾é¤˜é¡ä¸è¶³ï¼Œæ­¤æ¬¡ç„¡æ³•æ”¯å‡ºé‡‘é¡ " + amt + " å…ƒ !!");
 						continue;
 					} else {
 						myacnt.fetch(amt);
@@ -50,12 +50,12 @@ package ch14.hw;
 					ObjectInputStream ois = new ObjectInputStream(fis);
 					myacnt2 = (MyAccount) ois.readObject();
 					ois.close();
-					System.out.println("±zªº³Ì·s¾lÃB¬°¡G" + myacnt2.getBalance() + "\n");
+					System.out.println("æ‚¨çš„æœ€æ–°é¤˜é¡ç‚ºï¼š" + myacnt2.getBalance() + "\n");
 				} catch (Exception e) {
 
 				}
 
-				System.out.print("½Ğ¿ï¾Ü(1) ¦s¤J  (2) ¤ä¥X  (3) Â÷¶} ¡G");
+				System.out.print("è«‹é¸æ“‡(1) å­˜å…¥  (2) æ”¯å‡º  (3) é›¢é–‹ ï¼š");
 				scn = new Scanner(System.in);
 				oper = scn.nextInt();
 
@@ -65,7 +65,7 @@ package ch14.hw;
 				// break;
 				// case 2:
 				// if ((myacnt.getBalance() - 100) < 0) {
-				// System.out.println("¾lÃB¤£¨¬!");
+				// System.out.println("é¤˜é¡ä¸è¶³!");
 				// } else {
 				// myacnt.fetch(amt);
 				// }
@@ -76,9 +76,9 @@ package ch14.hw;
 				// break;
 				// }
 				// oos.writeObject(myacnt);
-				// System.out.println("±zªº³Ì·s¾lÃB¬°¡G" + myacnt.getBalance() + "\n");
+				// System.out.println("æ‚¨çš„æœ€æ–°é¤˜é¡ç‚ºï¼š" + myacnt.getBalance() + "\n");
 			}
-			System.out.print("µ{¦¡§Y±Nµ²§ô¡AÁÂÁÂ´ú¸Õ!!");
+			System.out.print("ç¨‹å¼å³å°‡çµæŸï¼Œè¬è¬æ¸¬è©¦!!");
 		}
 
 	}

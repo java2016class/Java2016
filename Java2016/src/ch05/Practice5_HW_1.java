@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Practice5_HW_1 {
 	public static void main(String[] args) {
-		System.out.print("½Ğ¿é¤J¦è¤¸¦~:");
+		System.out.print("è«‹è¼¸å…¥è¥¿å…ƒå¹´:");
 		Scanner sc = new Scanner(System.in);
 		int year = sc.nextInt();
 
 		if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
-			System.out.printf("±z¿é¤Jªº¦è¤¸¦~ %d ¬°¶|¦~\n", year);
+			System.out.printf("æ‚¨è¼¸å…¥çš„è¥¿å…ƒå¹´ %d ç‚ºé–å¹´\n", year);
 		} else {
-			System.out.printf("±z¿é¤Jªº¦è¤¸¦~ %d «D¶|¦~\n", year);
+			System.out.printf("æ‚¨è¼¸å…¥çš„è¥¿å…ƒå¹´ %d éé–å¹´\n", year);
 		}
 		sc.close();
 	}

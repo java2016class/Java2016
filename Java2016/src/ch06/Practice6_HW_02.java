@@ -2,8 +2,8 @@ package ch06;
 
 public class Practice6_HW_02 {
 	public static void main(String[] args) {
-		String subjects[] = { "", "°ê", "­^", "¼Æ", "Á`¤À", "¥­§¡", "³Æµù" };
-		String student_name[] = { "¾Ç¥ÍA", "¾Ç¥ÍB", "¾Ç¥ÍC" };
+		String subjects[] = { "", "åœ‹", "è‹±", "æ•¸", "ç¸½åˆ†", "å¹³å‡", "å‚™è¨»" };
+		String student_name[] = { "å­¸ç”ŸA", "å­¸ç”ŸB", "å­¸ç”ŸC" };
 		int score[][] = { { 90, 60, 71 }, { 75, 83, 70 }, { 60, 65, 70 } };
 		int maxSum = 0, sum[] = new int[3], j;
 

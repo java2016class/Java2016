@@ -13,7 +13,7 @@ public class App16_4 {
 			System.out.println(integer);
 		}
 
-		System.out.println(tset.subSet(30, 70)); //Åã¥Ü«ü©w½d³òªº­È¡A¥u¦³¤w±Æ§Çªº¤~¦³¦¹¥\¯à¡ATreeSet²Å¦X
+		System.out.println(tset.subSet(30, 70)); //é¡¯ç¤ºæŒ‡å®šç¯„åœçš„å€¼ï¼Œåªæœ‰å·²æ’åºçš„æ‰æœ‰æ­¤åŠŸèƒ½ï¼ŒTreeSetç¬¦åˆ
 	}
 
 	public static int getRandom() {

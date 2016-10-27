@@ -3,7 +3,7 @@ package ch16;
 public class App16_2 {
 	public static void main(String[] args) {
 		CMember<Integer> obj1 = new CMember<>();
-		//classÀHµÛnewª«¥ó®Éªº«ü©w«¬ºA¦Ó§ïÅÜT­È¡A¦³¨Ï¥Î¨ìªx«¬ÅÜ¼Æªº³£·|¦Û°ÊÂà´«¦¨«ü©w«¬ºA
+		//classéš¨è‘—newç‰©ä»¶æ™‚çš„æŒ‡å®šå‹æ…‹è€Œæ”¹è®ŠTå€¼ï¼Œæœ‰ä½¿ç”¨åˆ°æ³›å‹è®Šæ•¸çš„éƒ½æœƒè‡ªå‹•è½‰æ›æˆæŒ‡å®šå‹æ…‹
 		CMember<String> obj2 = new CMember<>();
 		obj1.setId(1);
 		obj2.setId("String");
@@ -11,7 +11,7 @@ public class App16_2 {
 		obj2.show();
 	}
 
-	static class CMember<T> {//¼u©Ê¤j ¦ı¨Ï¥Î±`¥Î«¬ºA¦pintÅÜ¼Æ «h¥²¶·¨Ï¥Î IntegerÃş§OÅÜ¼Æ
+	static class CMember<T> {//å½ˆæ€§å¤§ ä½†ä½¿ç”¨å¸¸ç”¨å‹æ…‹å¦‚intè®Šæ•¸ å‰‡å¿…é ˆä½¿ç”¨ Integeré¡åˆ¥è®Šæ•¸
 		private T id;
 
 		public void setId(T value) {

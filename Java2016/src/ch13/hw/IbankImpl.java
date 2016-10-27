@@ -12,10 +12,10 @@ public class IbankImpl implements Ibank {
 	public void login(String username, String pass) {
 		// TODO Auto-generated method stub
 		if (username.equals(USERNAME) && pass.equals(PASS)) {
-			System.out.println("Åwªï¥úÁ{");
+			System.out.println("æ­¡è¿å…‰è‡¨");
 			success = true;
 		} else {
-			System.out.println("¨Ï¥ÎªÌ¦WºÙ»P±K½X¤£²Å");
+			System.out.println("ä½¿ç”¨è€…åç¨±èˆ‡å¯†ç¢¼ä¸ç¬¦");
 		}
 	}
 

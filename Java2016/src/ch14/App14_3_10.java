@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class App14_3_10 {
-	//¼Æ¦r¿é¥X¤èªk¬°¶Ã½X¡A¦]¬°¿é¥Xªº¤èªk¬O¨Ï¥Î¦r¤¸¡A­Y­n¼Æ¦r¥¿½T«h»İ¥ıÂà´«¦¨String
+	//æ•¸å­—è¼¸å‡ºæ–¹æ³•ç‚ºäº‚ç¢¼ï¼Œå› ç‚ºè¼¸å‡ºçš„æ–¹æ³•æ˜¯ä½¿ç”¨å­—å…ƒï¼Œè‹¥è¦æ•¸å­—æ­£ç¢ºå‰‡éœ€å…ˆè½‰æ›æˆString
 	public static void main(String[] args) throws IOException {
 		FileWriter fw = new FileWriter("D:\\random.txt");
 		BufferedWriter bw = new BufferedWriter(fw);
@@ -21,7 +21,7 @@ public class App14_3_10 {
 		bw.close();
 		fw.close();
 
-		System.out.println("¼g¤JÀH¾÷¼Æ¦r1000­Ó§¹¦¨");
+		System.out.println("å¯«å…¥éš¨æ©Ÿæ•¸å­—1000å€‹å®Œæˆ");
 
 		FileReader fr = new FileReader("D:\\random.txt");
 		BufferedReader br = new BufferedReader(fr);
@@ -36,7 +36,7 @@ public class App14_3_10 {
 
 		Arrays.sort(array);
 
-		System.out.println("Åª¨ú¨Ã±Æ§Ç¼Æ¦r§¹¦¨");
+		System.out.println("è®€å–ä¸¦æ’åºæ•¸å­—å®Œæˆ");
 
 		fw = new FileWriter("D:\\random_sort.txt");
 		bw = new BufferedWriter(fw);
@@ -49,6 +49,6 @@ public class App14_3_10 {
 		bw.close();
 		fw.close();
 
-		System.out.println("±Æ§ÇÀÉ®×¼g¥X§¹²¦");
+		System.out.println("æ’åºæª”æ¡ˆå¯«å‡ºå®Œç•¢");
 	}
 }

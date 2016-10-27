@@ -25,11 +25,11 @@ interface Math {
 }
 
 interface AdvanceMath {
-	void mod(int a, int b); // ­pºâa%b;
+	void mod(int a, int b); // è¨ˆç®—a%b;
 
-	void fac(int a); // ­pºâa!
+	void fac(int a); // è¨ˆç®—a!
 
-	void pow(int a, int b); // ­pºâa^b
+	void pow(int a, int b); // è¨ˆç®—a^b
 }
 
 class Compute implements Math, AdvanceMath {

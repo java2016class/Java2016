@@ -4,7 +4,7 @@ public class Practice5_3_All {
 
 	public static void main(String[] args) {
 		// 8.
-		System.out.print("¥i³Q16¾ã°£ªº¼Æ:");
+		System.out.print("å¯è¢«16æ•´é™¤çš„æ•¸:");
 		for (int i = 1; i <= 100; i++) {
 			if (i % 16 == 0) {
 				System.out.printf("%d  ", i);
@@ -17,7 +17,7 @@ public class Practice5_3_All {
 		for (int i = 1; i <= 100; i++) {
 			sum += i * i;
 		}
-		System.out.println("1~100ªº¥­¤è­ÈÁ`©M¬°" + sum);
+		System.out.println("1~100çš„å¹³æ–¹å€¼ç¸½å’Œç‚º" + sum);
 
 		// 10.
 		for (int j = 0; j <= 5; j++) {

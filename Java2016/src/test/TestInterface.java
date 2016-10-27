@@ -2,7 +2,7 @@ package test;
 
 public class TestInterface {
 	public static void main(String[] args) {
-		Rect rect = new Rect() {//¥¼¨Ï¥Îclass®É­n§Y®É¹ê§@;
+		Rect rect = new Rect() {//æœªä½¿ç”¨classæ™‚è¦å³æ™‚å¯¦ä½œ;
 			
 			@Override
 			public void show() {
@@ -11,7 +11,7 @@ public class TestInterface {
 			}
 		};
 
-		rect = new RectImpl(); //¨Ï¥Îclass«á¤£¥Î¹ê§@¡A¦]¬°¦b¸Óclass¤w¸g¹ê§@
+		rect = new RectImpl(); //ä½¿ç”¨classå¾Œä¸ç”¨å¯¦ä½œï¼Œå› ç‚ºåœ¨è©²classå·²ç¶“å¯¦ä½œ
 		rect.show();
 	}
 
@@ -27,8 +27,8 @@ class RectImpl implements Rect{
 }
 
 class MultiImpl implements Rect,Cir{
-	//¦h­«Ä~©Ó(¹ê§@)interface¡A¦ıinterface¤º¦³¦PºØ¤èªk®É? show()«h³QÂĞ»\¨ä¤@
-	//¸Ñ¨M¤èªk¦³¤G¡A¤@¦b³]­p®É©ú½T©w¸q¤£¦P¤èªk¡B¤G¨Ï¥Î¤£¦Pclass­Ó§Oimplements interface
+	//å¤šé‡ç¹¼æ‰¿(å¯¦ä½œ)interfaceï¼Œä½†interfaceå…§æœ‰åŒç¨®æ–¹æ³•æ™‚? show()å‰‡è¢«è¦†è“‹å…¶ä¸€
+	//è§£æ±ºæ–¹æ³•æœ‰äºŒï¼Œä¸€åœ¨è¨­è¨ˆæ™‚æ˜ç¢ºå®šç¾©ä¸åŒæ–¹æ³•ã€äºŒä½¿ç”¨ä¸åŒclasså€‹åˆ¥implements interface
 
 	@Override
 	public void show() {
@@ -39,7 +39,7 @@ class MultiImpl implements Rect,Cir{
 }
 
 class TriImpl implements Rect,Cir,Squ{
-	//¦h­Óinterface¹ê§@¡A½Æ¼Æ¥H¤W¤èªk·|¤@¦P³Q¾É¤J
+	//å¤šå€‹interfaceå¯¦ä½œï¼Œè¤‡æ•¸ä»¥ä¸Šæ–¹æ³•æœƒä¸€åŒè¢«å°å…¥
 
 	@Override
 	public void showAll() {

@@ -4,7 +4,7 @@ import test.protecttest.Try;
 
 public class Son extends Try {
 	public static void main(String[] args) {
-		// System.out.println(you); ¥¼«ü©w­×¹¢¤lªº®É­ÔµLªkÄ~©Ó
-		System.out.println(my); // protected ¥i¥HÅı¦P­Ópackage¥H¤UÄ~©Ó¡A¦ı¥H¤W¤£¦æ
+		// System.out.println(you); æœªæŒ‡å®šä¿®é£¾å­çš„æ™‚å€™ç„¡æ³•ç¹¼æ‰¿
+		System.out.println(my); // protected å¯ä»¥è®“åŒå€‹packageä»¥ä¸‹ç¹¼æ‰¿ï¼Œä½†ä»¥ä¸Šä¸è¡Œ
 	}
 }

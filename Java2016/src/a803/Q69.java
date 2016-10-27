@@ -1,6 +1,6 @@
 package a803;
 
-public class Q69 {// ÃD¥Ø±Ô­z¦³»~
+public class Q69 {// é¡Œç›®æ•˜è¿°æœ‰èª¤
 	public static void main(String[] args) {
 		try {
 			doStuff();

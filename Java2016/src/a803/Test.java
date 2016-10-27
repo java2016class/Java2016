@@ -16,7 +16,7 @@ public class Test {
 	// D.enum ThreadSafe { ONE, TWO, Three; synchronized final void doIt () {} }
 }
 
-//interface ThreadSafe { synchronized void doIt(); } ¤£¯àª½±µ¨Ï¥Îsync
-//abstract class ThreadSafes { synchronized abstract void doIt(); } ¤£¯àª½±µ¨Ï¥Îsync
+//interface ThreadSafe { synchronized void doIt(); } ä¸èƒ½ç›´æ¥ä½¿ç”¨sync
+//abstract class ThreadSafes { synchronized abstract void doIt(); } ä¸èƒ½ç›´æ¥ä½¿ç”¨sync
 class ThreadSafess { synchronized static void soIt () {} }
 enum ThreadSafesss { ONE, TWO, Three; synchronized final void doIt () {} }

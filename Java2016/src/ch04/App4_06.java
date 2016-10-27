@@ -3,8 +3,8 @@ package ch04;
 public class App4_06 {
 public static void main(String[] args) {
 	int a=2,b=5;
-	System.out.println("­pºâ«ea="+a+" ;b="+b);
+	System.out.println("è¨ˆç®—å‰a="+a+" ;b="+b);
 	a+=b;
-	System.out.println("­pºâ«áa="+a+" ;b="+b);
+	System.out.println("è¨ˆç®—å¾Œa="+a+" ;b="+b);
 }
 }

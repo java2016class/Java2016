@@ -5,7 +5,7 @@ public class App6_04 {
 		int i, j;
 		int sales[][] = { { 32, 35, 26, 30 }, { 34, 30, 33, 31 } };
 		for (i = 0; i < sales.length; i++) {
-			System.out.println("·~°È­û" + (i + 1) + "ªº·~ÁZ¬°:");
+			System.out.println("æ¥­å‹™å“¡" + (i + 1) + "çš„æ¥­ç¸¾ç‚º:");
 			for (j = 0; j < sales[i].length; j++) {
 				System.out.print(sales[i][j] + " ");
 			}

@@ -10,7 +10,7 @@ public class Practice6_HW_04 {
 			System.out.println("\t" + i);
 		}
 		int n1 = Arrays.binarySearch(n, 61);
-		//�M��ȡA�䤣�쬰�t����ܥB��ȳ̾a�񪺼ƭȦ�m
+		//尋找值，找不到為負值顯示且選值最靠近的數值位置
 		System.out.println("\n" + n1);
 	}
 }

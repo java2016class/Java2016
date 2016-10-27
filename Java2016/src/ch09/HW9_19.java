@@ -18,7 +18,7 @@ class Data {
 	}
 
 	void show() {
-		System.out.printf("¾Ç¥Í©m¦W:%s\n­^¤å¦¨ÁZ:%s\n¼Æ¾Ç¦¨ÁZ:%s\n¥­§¡¦¨ÁZ:%s\n", name, score.english, score.math, avg());
+		System.out.printf("å­¸ç”Ÿå§“å:%s\nè‹±æ–‡æˆç¸¾:%s\næ•¸å­¸æˆç¸¾:%s\nå¹³å‡æˆç¸¾:%s\n", name, score.english, score.math, avg());
 	}
 
 	double avg() {

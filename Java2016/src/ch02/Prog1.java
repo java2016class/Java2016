@@ -15,7 +15,7 @@ public class Prog1 {
 		System.out.println(str[0]+" "+strs[0]);
 		
 		System.out.println("Hello " + 1 + 2 * 5);
-		System.out.println(args[0] + " " + args[1]); //¨Ï¥Îrun configurations ³]©w°Ñ¼Æ
+		System.out.println(args[0] + " " + args[1]); //ä½¿ç”¨run configurations è¨­å®šåƒæ•¸
 
 	}
 

@@ -4,20 +4,20 @@ public class Q11 {
 	public static void main(String[] args) {
 		Q11 q11 = new Tell();
 		Tell tellIt = new Tell();
-		// q11.tellItLikeItIs(); //¤÷Ãş§O¨S¦³
-		// (Truth)q11.tellItLikeItIs();//¥~³¡±jÂà¤£¦æ
+		// q11.tellItLikeItIs(); //çˆ¶é¡åˆ¥æ²’æœ‰
+		// (Truth)q11.tellItLikeItIs();//å¤–éƒ¨å¼·è½‰ä¸è¡Œ
 		q11.show();
 		((Truth) q11).tellItLikeItIs();
 		tellIt.tellItLikeItIs();
-		// (Truth)tellIt.tellItLikeItIs();//¥~³¡±jÂà¤£¦æ
+		// (Truth)tellIt.tellItLikeItIs();//å¤–éƒ¨å¼·è½‰ä¸è¡Œ
 		((Truth) tellIt).tellItLikeItIs();
 	}
 
 	void show() {
 		System.out.println("Father");
 	};
-	// ¤÷¨S¦³¤l¦³=¤£¯à©I¥s¡A°£«D±jÂà
-	// ¤÷¦³¤l¦³=©I¥s¤l
+	// çˆ¶æ²’æœ‰å­æœ‰=ä¸èƒ½å‘¼å«ï¼Œé™¤éå¼·è½‰
+	// çˆ¶æœ‰å­æœ‰=å‘¼å«å­
 
 }
 

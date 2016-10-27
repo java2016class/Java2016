@@ -8,7 +8,7 @@ public class Practice5_HW_6 {
 		int x = 1, sum = 0;
 		int input;
 		do {
-			System.out.print("½Ð¿é¤J²Ä" + x + "¦¸¼Æ­È: ");
+			System.out.print("è«‹è¼¸å…¥ç¬¬" + x + "æ¬¡æ•¸å€¼: ");
 			input = sc.nextInt();
 			if(input<0){
 				x--;
@@ -18,6 +18,6 @@ public class Practice5_HW_6 {
 			x++;
 		} while (true);
 
-		System.out.println("¿é¤J"+x+"¦¸ªºÁ`¦X¬°:" + sum + " ; ¥­§¡¬°:" + sum / (double)x);
+		System.out.println("è¼¸å…¥"+x+"æ¬¡çš„ç¸½åˆç‚º:" + sum + " ; å¹³å‡ç‚º:" + sum / (double)x);
 	}
 }

@@ -9,12 +9,12 @@ public class App2_01 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int num; // ½Ğ°O¾ĞÅéªÅ¥X°Ñ¦Ò¦ì¸m
-		num = 2; // «ü©w°Ñ¼Æ¨ì°Ñ¦Ò¦ì¸m¡Aµ¥¸¹¥kÃäªº­È¬£¨ì¥ªÃä¥h¡C
-		Scanner sc = new Scanner(System.in); //¿é¤J°Ñ¼Æ
-		System.out.print("½Ğ¿é¤Jª¯¼Æ:");
+		int num; // è«‹è¨˜æ†¶é«”ç©ºå‡ºåƒè€ƒä½ç½®
+		num = 2; // æŒ‡å®šåƒæ•¸åˆ°åƒè€ƒä½ç½®ï¼Œç­‰è™Ÿå³é‚Šçš„å€¼æ´¾åˆ°å·¦é‚Šå»ã€‚
+		Scanner sc = new Scanner(System.in); //è¼¸å…¥åƒæ•¸
+		System.out.print("è«‹è¼¸å…¥ç‹—æ•¸:");
 		System.out.println("I have " + sc.next() + " dogs.");
-		System.out.print("½Ğ¿é¤Jª¯¼Æ:");
+		System.out.print("è«‹è¼¸å…¥ç‹—æ•¸:");
 		System.out.println("You have " + sc.next() + " dogs, too.");
 
 	}

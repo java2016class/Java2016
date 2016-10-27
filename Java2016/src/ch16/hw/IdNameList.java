@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * ¨­¤ÀÃÒÀËÅç¾÷¨î
+ * èº«åˆ†è­‰æª¢é©—æ©Ÿåˆ¶
  * 
  * @author Odise
  */
@@ -17,7 +17,7 @@ public class IdNameList {
 
 	// A123456789 is correct; A WZIO =10 B 11 C 12
 	public static void main(String[] args) {
-		System.out.println("¨­¤ÀÃÒÀË¬dµ²ªG: " + isChecked("a123456789"));
+		System.out.println("èº«åˆ†è­‰æª¢æŸ¥çµæœ: " + isChecked("a123456789"));
 	}
 
 	static boolean isChecked(String id) {

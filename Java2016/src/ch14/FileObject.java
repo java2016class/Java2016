@@ -22,8 +22,8 @@ public class FileObject {
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		CMyStudent st;
 		while (fis.available() > 0) {
-			// ¤£¯àª½±µ¨Ï¥Îois¤ºªºavailable¡A¦ı¥i¥Îfis¤ºªºavaiable¨Ó°µ°j°é²×¤îªº°Ê§@
-			// ¥HÁ×§K¥X²{EOFException
+			// ä¸èƒ½ç›´æ¥ä½¿ç”¨oiså…§çš„availableï¼Œä½†å¯ç”¨fiså…§çš„avaiableä¾†åšè¿´åœˆçµ‚æ­¢çš„å‹•ä½œ
+			// ä»¥é¿å…å‡ºç¾EOFException
 			st = (CMyStudent) ois.readObject();
 			st.computSum();
 			System.out.println(st.toString());
@@ -35,7 +35,7 @@ public class FileObject {
 }
 
 class CMyStudent implements Serializable {
-	// µL©w¸q serial¤]¥i¥H
+	// ç„¡å®šç¾© serialä¹Ÿå¯ä»¥
 
 	private String id;
 	private String name;

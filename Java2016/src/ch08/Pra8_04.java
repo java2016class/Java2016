@@ -5,8 +5,8 @@ public class Pra8_04 {
 		CSphere sphere = new CSphere();
 		sphere.setLocation(3, 4, 5);
 		sphere.setRadius(1);
-		System.out.println("¶ê²yªí­±¿n : "+sphere.surfaceArea());
-		System.out.println("¶ê²yÅé¿n : "+sphere.volume());
+		System.out.println("åœ“çƒè¡¨é¢ç© : "+sphere.surfaceArea());
+		System.out.println("åœ“çƒé«”ç© : "+sphere.volume());
 		sphere.showCenter();
 	}
 
@@ -34,6 +34,6 @@ class CSphere {
 	}
 
 	void showCenter() {
-		System.out.println("¶ê¤ß : x = " + x + " , y = " + y + " , z = " + z);
+		System.out.println("åœ“å¿ƒ : x = " + x + " , y = " + y + " , z = " + z);
 	}
 }

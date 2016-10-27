@@ -13,9 +13,9 @@ public class Pra16_4_11 {
 
 		System.out.println(tm.toString());
 
-		System.out.println(tm.firstKey() + " ¬° " + tm.get(tm.firstKey()));
-		System.out.println(tm.lastKey() + " ¬° " + tm.get(tm.lastKey()));
-		System.out.println("»ù®t : " + (tm.lastKey() - tm.firstKey()));
+		System.out.println(tm.firstKey() + " ç‚º " + tm.get(tm.firstKey()));
+		System.out.println(tm.lastKey() + " ç‚º " + tm.get(tm.lastKey()));
+		System.out.println("åƒ¹å·® : " + (tm.lastKey() - tm.firstKey()));
 	}
 
 }

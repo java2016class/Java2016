@@ -33,18 +33,18 @@ class Cstudent {
 		switch (type) {
 		case 1:
 			if (weight > 40 && weight < 150)
-				System.out.println("­è¦n");
+				System.out.println("å‰›å¥½");
 			else
-				System.out.println("¹L­«©Î¹L»´");
+				System.out.println("éŽé‡æˆ–éŽè¼•");
 			break;
 		case 2:
 			if (height > 50 && height < 250)
-				System.out.println("«Ó­ô");
+				System.out.println("å¸¥å“¥");
 			else
-				System.out.println("¸G¤H©Î¥¨¤H");
+				System.out.println("çŸ®äººæˆ–å·¨äºº");
 			break;
 		case 3:
-			System.out.println("¨­°ª : " + height + " , Åé­« : " + weight);
+			System.out.println("èº«é«˜ : " + height + " , é«”é‡ : " + weight);
 			break;
 		}
 	}

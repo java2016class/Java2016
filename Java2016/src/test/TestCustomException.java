@@ -11,7 +11,7 @@ public class TestCustomException {
 
 }
 
-class TryException extends Exception { //¦Û«ØException
+class TryException extends Exception { //è‡ªå»ºException
 
 	/**
 	 * 

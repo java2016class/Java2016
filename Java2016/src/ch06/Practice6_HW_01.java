@@ -6,16 +6,16 @@ public class Practice6_HW_01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int score[], sum = 0;
-		System.out.print("½Ğ½T»{­n¿é¤J´X­Ó¤À¼Æ:");
+		System.out.print("è«‹ç¢ºèªè¦è¼¸å…¥å¹¾å€‹åˆ†æ•¸:");
 		score = new int[sc.nextInt()];
 		for (int i = 0; i < score.length; i++) {
-			System.out.print("½Ğ¿é¤J²Ä" + (i + 1) + "­Ó¤À¼Æ:");
+			System.out.print("è«‹è¼¸å…¥ç¬¬" + (i + 1) + "å€‹åˆ†æ•¸:");
 			score[i] = sc.nextInt();
 			sum += score[i];
 		}
 		for (int i : score) {
-			System.out.println("±z¿é¤Jªº¼Æ¦r¬°:" + i);
+			System.out.println("æ‚¨è¼¸å…¥çš„æ•¸å­—ç‚º:" + i);
 		}
-		System.out.println("±z¿é¤Jªº¼Æ¦rÁ`¦X¬°:" + sum);
+		System.out.println("æ‚¨è¼¸å…¥çš„æ•¸å­—ç¸½åˆç‚º:" + sum);
 	}
 }

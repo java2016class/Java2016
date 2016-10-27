@@ -3,7 +3,7 @@ package test;
 public class InstanceofRelation {
 	public static void main(String[] args) {
 		MultiImpl multi = new MultiImpl();
-		boolean chk = (multi instanceof Rect); //ÀË¬d¬O§_¦³Ä~©ÓÃö«Y?
+		boolean chk = (multi instanceof Rect); //æª¢æŸ¥æ˜¯å¦æœ‰ç¹¼æ‰¿é—œä¿‚?
 		System.out.println(chk);
 	}
 

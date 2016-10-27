@@ -17,7 +17,7 @@ class CCCCircle {
 	}
 
 	public void compare(CCCCircle circle) {
-		if (this.radius == circle.radius) { // ³o¸Ìªºprivate ¦]¬°¨Ï¥Î¦P¤@­Óclass¡A©Ò¥H¥i¥H©I¥s¨p¦³¤ÆÅÜ¼Æ©Î¨ç¼Æ
+		if (this.radius == circle.radius) { // é€™è£¡çš„private å› ç‚ºä½¿ç”¨åŒä¸€å€‹classï¼Œæ‰€ä»¥å¯ä»¥å‘¼å«ç§æœ‰åŒ–è®Šæ•¸æˆ–å‡½æ•¸
 			System.out.println("radius are equal");
 		} else {
 			System.out.println("radius are not equal");

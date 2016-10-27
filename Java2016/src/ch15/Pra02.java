@@ -5,10 +5,10 @@ import java.util.Date;
 public class Pra02 {
 	public static void main(String[] args) {
 		// T6 t6 = new T6(15000);
-		// t6.start(); ³æ¤@°õ¦æºü¹ê§@
+		// t6.start(); å–®ä¸€åŸ·è¡Œç·’å¯¦ä½œ
 
 		T4 t4 = new T4();
-		t4.start();// ÃD¥Ø­n¨Dªº
+		t4.start();// é¡Œç›®è¦æ±‚çš„
 	}
 }
 
@@ -27,12 +27,12 @@ class T6 extends Thread {
 	}
 
 	public synchronized void goHome() {
-		System.out.println("¤p©ú¦^¨ì®a¤F");
+		System.out.println("å°æ˜å›åˆ°å®¶äº†");
 		montherCooking();
 	}
 
 	public synchronized void montherCooking() {
-		System.out.println("¶ı¶ıµN¶º¤¤... " + getDate());
+		System.out.println("åª½åª½ç…®é£¯ä¸­... " + getDate());
 		try {
 			sleep(seconds);
 		} catch (InterruptedException e) {
@@ -43,7 +43,7 @@ class T6 extends Thread {
 	}
 
 	public synchronized void doEat() {
-		System.out.println("µN¦n¤F!¶}©l¦Y¶º! " + getDate());
+		System.out.println("ç…®å¥½äº†!é–‹å§‹åƒé£¯! " + getDate());
 	}
 
 	public String getDate() {
@@ -51,12 +51,12 @@ class T6 extends Thread {
 	}
 }
 
-class T4 extends Thread {// ¤p©ú
+class T4 extends Thread {// å°æ˜
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
 		// super.run();
-		System.out.println("¤p©ú¦^¨ì®a¤F");
+		System.out.println("å°æ˜å›åˆ°å®¶äº†");
 
 		// T5 t5 = new T5();
 		// try {
@@ -85,7 +85,7 @@ class T4 extends Thread {// ¤p©ú
 	}
 
 	public void eat() {
-		System.out.println("µN¦n¤F!¶}©l¦Y¶º!");
+		System.out.println("ç…®å¥½äº†!é–‹å§‹åƒé£¯!");
 	}
 
 	public String getDate() {
@@ -93,7 +93,7 @@ class T4 extends Thread {// ¤p©ú
 	}
 }
 
-class T5 extends Thread {// ¶ı¶ı
+class T5 extends Thread {// åª½åª½
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
@@ -101,7 +101,7 @@ class T5 extends Thread {// ¶ı¶ı
 		try {
 			for (int i = 15; i > 0; i--) {
 				sleep(1000);
-				System.out.println("¶ZÂ÷§¹¦¨µN¶ºÁÙ¦³" + i + "¤À");
+				System.out.println("è·é›¢å®Œæˆç…®é£¯é‚„æœ‰" + i + "åˆ†");
 			}
 
 		} catch (InterruptedException e) {
@@ -111,7 +111,7 @@ class T5 extends Thread {// ¶ı¶ı
 	}
 }
 
-class T7 implements Runnable {// ¶ı¶ı
+class T7 implements Runnable {// åª½åª½
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
@@ -119,7 +119,7 @@ class T7 implements Runnable {// ¶ı¶ı
 		try {
 			for (int i = 15; i > 0; i--) {
 				Thread.sleep(1000);
-				System.out.println("¶ZÂ÷§¹¦¨µN¶ºÁÙ¦³" + i + "¤À");
+				System.out.println("è·é›¢å®Œæˆç…®é£¯é‚„æœ‰" + i + "åˆ†");
 			}
 
 		} catch (InterruptedException e) {

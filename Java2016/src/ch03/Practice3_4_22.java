@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class Practice3_4_22 {
 
 	public static void main(String[] args) {
-		System.out.print("½Ğ¿é¤JÀH«K¤@­Ó­^¤å¦r¥À: ");
+		System.out.print("è«‹è¼¸å…¥éš¨ä¾¿ä¸€å€‹è‹±æ–‡å­—æ¯: ");
 		Scanner sc = new Scanner(System.in);
 		while (true) {
 			String word = sc.next();
 			int get = word.charAt(0);
 			if (get >= 65 && get < 91) {
 				get = get - 64;
-				System.out.println("±z¿é¤Jªº¤j¼g­^¤å¬° : " + word + " , ¦r¥À±Æ¦W¬° :" + get);
+				System.out.println("æ‚¨è¼¸å…¥çš„å¤§å¯«è‹±æ–‡ç‚º : " + word + " , å­—æ¯æ’åç‚º :" + get);
 			} else if (get >= 97 && get < 123) {
 				get = get - 96;
-				System.out.println("±z¿é¤Jªº¤p¼g­^¤å¬° : " + word + " , ¦r¥À±Æ¦W¬° :" + get);
+				System.out.println("æ‚¨è¼¸å…¥çš„å°å¯«è‹±æ–‡ç‚º : " + word + " , å­—æ¯æ’åç‚º :" + get);
 			} else {
-				System.out.println("±z¿é¤Jªº¤£¬O­^¤å¦r¥À");
+				System.out.println("æ‚¨è¼¸å…¥çš„ä¸æ˜¯è‹±æ–‡å­—æ¯");
 			}
-			System.out.print("½Ğ¿é¤JÀH«K¤@­Ó­^¤å¦r¥À: ");
+			System.out.print("è«‹è¼¸å…¥éš¨ä¾¿ä¸€å€‹è‹±æ–‡å­—æ¯: ");
 		}
 
 	}
