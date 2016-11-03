@@ -115,7 +115,7 @@ class Operations {
 		try {
 			ps = conn.prepareStatement("DELETE from pra.people WHERE NUMBER=?");
 
-			ps.setString(1, people[0]); // % º“Ωk∑j¥M
+			ps.setString(1, people[0]); // % Ê®°Á≥äÊêúÂ∞ã
 			ps.executeUpdate();
 			System.out.println("Del data");
 			return true;
@@ -131,7 +131,7 @@ class Operations {
 		try {
 			ps = conn.prepareStatement("select * from pra.people where number LIKE ?");
 
-			ps.setString(1, "%" + "" + "%"); // % º“Ωk∑j¥M
+			ps.setString(1, "%" + "" + "%"); // % Ê®°Á≥äÊêúÂ∞ã
 			ResultSet rs = ps.executeQuery();
 			System.out.println("Read data");
 			while (rs.next()) {
