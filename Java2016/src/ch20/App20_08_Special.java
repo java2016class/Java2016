@@ -25,7 +25,7 @@ public class App20_08_Special extends Frame {
 		frm.setVisible(true);
 		frm.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
-				timer.cancel();//這裡設定取消計時器功能
+				timer.cancel();//這裡設定取消定時器功能
 				System.exit(0);
 			}
 		});
@@ -109,8 +109,8 @@ public class App20_08_Special extends Frame {
 		}
 	}
 
-	public void setTimer() {// 計時器
-		TimerTask task = new TimerTask() {// 計時器的實作
+	public void setTimer() {// 定時器
+		TimerTask task = new TimerTask() {// 定時器的實作
 
 			@Override
 			public void run() {
@@ -133,7 +133,7 @@ public class App20_08_Special extends Frame {
 			}
 		};
 		timer = new Timer(); // 建立計時器參考物件
-		timer.schedule(task, 1000, 25); // 設定計時器的延遲啟動與重複執行的時間(1000為一秒)
-		// 本案例的timer若沒有使用cancel()結束，則會一直無窮計時下去
+		timer.schedule(task, 1000, 25); // 設定定時器的延遲啟動與重複執行的時間(1000為一秒)
+		// 本案例的timer若沒有使用cancel()結束，則會一直無窮定時下去
 	}
 }
