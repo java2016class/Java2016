@@ -77,7 +77,11 @@ public class IdNameListFrame3 extends Frame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				label.setText("id: " + isChecked(field.getText()));
+				if (field.getText().length() == 10) {
+					label.setText("id: " + isChecked(field.getText()));
+				} else {
+					label.setText("id: Error");
+				}
 			}
 		};
 		return listener;
