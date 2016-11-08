@@ -31,7 +31,7 @@ public class B01 {
 		try {
 			while ((str = br.readLine()) != null) {
 				sb.append(str.replaceAll("\\s+", "-")).append(";");
-				// ¨Ï¥Î \\s+ ±N©Ò¦³¤£¦PªºªÅ¥Õ¦r¤¸¨ú¥N
+				// ä½¿ç”¨ \\s+ å°‡æ‰€æœ‰ä¸åŒçš„ç©ºç™½å­—å…ƒå–ä»£
 				count++;
 			}
 			String[] strTemp = sb.toString().split(";");
