@@ -173,7 +173,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 											true);
 									ta.append(serverIO.getInetAddress().getHostName() + ": 加入聊天室\n");
 									sets.add(serverIO.getInetAddress().getHostName());
-									String temp = "add:";
+									String temp = "add:" + serverIO.getInetAddress().getHostName() + ":";
 									for (String user : wList.keySet()) {
 										temp += user + ":";
 										wList.get(user).println(serverIO.getInetAddress().getHostName() + ": 加入聊天室\n");
