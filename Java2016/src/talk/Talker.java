@@ -1,5 +1,8 @@
 package talk;
 
+import java.awt.Menu;
+import java.awt.MenuBar;
+import java.awt.MenuItem;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -16,13 +19,15 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -34,6 +39,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 	 */
 	private static final long serialVersionUID = 1L;
 
+	MenuItem mi;
 	JLabel lbUser, lbServer, lbServerStatus, lbClient;
 	JTextField tfClient, tfMsg;
 	JTextArea ta;
@@ -44,6 +50,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 	int serverPort = 1978;
 	PrintWriter sWriter, cWriter;
 	Map<String, PrintWriter> wList = new HashMap<>();
+	Set<String> sets = new HashSet<>();
 	Socket client;
 	boolean read = true;
 	static InetAddress addr;
@@ -63,6 +70,9 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(200, 200, 300, 420);
 
+		MenuBar mb = new MenuBar();
+		Menu clients = new Menu("Clients");
+		mi = new MenuItem("Show Client list");
 		lbUser = new JLabel(addr.getHostName());
 		lbServer = new JLabel("Server : ");
 		lbServerStatus = new JLabel("Not start");
@@ -74,6 +84,8 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 		tfMsg = new JTextField();
 		btnSend = new JButton("Send Message");
 
+		mb.add(clients);
+		clients.add(mi);
 		lbUser.setBounds(80, 10, 100, 20);
 		lbServer.setBounds(10, 40, 50, 20);
 		lbServerStatus.setBounds(70, 40, 100, 20);
@@ -84,6 +96,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 		tfMsg.setBounds(10, 310, 260, 20);
 		btnSend.setBounds(10, 340, 260, 20);
 
+		setMenuBar(mb);
 		add(lbUser);
 		add(lbServer);
 		add(lbServerStatus);
@@ -94,13 +107,14 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 		add(tfMsg);
 		add(btnSend);
 
+		mi.addActionListener(this);
 		tfMsg.addKeyListener(this);
 		btnConn.addActionListener(this);
 		btnSend.addActionListener(this);
 		addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
 				if (cWriter != null) {
-					cWriter.println(addr.getHostName() + " 離開聊天室");
+					cWriter.println(addr.getHostName() + ": 離開聊天室");
 				}
 
 				try {
@@ -153,10 +167,17 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 									count++;
 									btnConn.setEnabled(false);
 									lbServerStatus.setText(serverIO.getInetAddress().getHostAddress() + "connected");
-									ta.append(serverIO.getInetAddress().getHostName() + " 加入聊天室\n");
 									sWriter = new PrintWriter(
 											new OutputStreamWriter(serverIO.getOutputStream(), StandardCharsets.UTF_8),
 											true);
+									ta.append(serverIO.getInetAddress().getHostName() + ": 加入聊天室\n");
+									sets.add(serverIO.getInetAddress().getHostName());
+									String temp = "add:";
+									for (String user : wList.keySet()) {
+										temp += user + ":";
+										wList.get(user).println(serverIO.getInetAddress().getHostName() + ": 加入聊天室\n");
+									}
+									sWriter.println(temp);
 									wList.put(serverIO.getInetAddress().getHostName(), sWriter);
 									BufferedReader reader = new BufferedReader(
 											new InputStreamReader(serverIO.getInputStream(), "UTF-8"));
@@ -177,6 +198,11 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 											ta.setCaretPosition(ta.getDocument().getLength());
 											if (line.contains("離開聊天")) {
 												wList.remove(line.split(":")[0]);
+												sets.remove(line.split(":")[0]);
+												for (String user : wList.keySet()) {
+													wList.get(user).println(
+															serverIO.getInetAddress().getHostName() + ": 離開聊天室\n");
+												}
 												serverIO.close();
 												serverIO = null;
 											}
@@ -228,6 +254,22 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 							System.out.println("讀取資料");
 							line = br.readLine();
 							if (line != null) {
+								if (line.split(":")[0].equals("add")) {
+									for (String string : line.split(":")) {
+										if (string.equals("add"))
+											continue;
+										sets.add(string);
+									}
+									continue;
+								}
+								if (line.contains("加入聊天室")) {
+									sets.add(line.split(":")[0]);
+									continue;
+								}
+								if (line.contains("離開聊天室")) {
+									sets.remove(line.split(":")[0]);
+									continue;
+								}
 								if (line.contains(addr.getHostName())) {
 									continue;
 								}
@@ -280,7 +322,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 			ta.append(tfMsg.getText() + "\n");
 			if (sWriter != null) {
 				for (String user : wList.keySet()) {
-						wList.get(user).println(addr.getHostName() + ": " + tfMsg.getText());
+					wList.get(user).println(addr.getHostName() + ": " + tfMsg.getText());
 				}
 			}
 			if (cWriter != null) {
@@ -307,14 +349,14 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 			ta.append(tfMsg.getText() + "\n");
 			if (sWriter != null) {
 				for (String user : wList.keySet()) {
-						wList.get(user).println(addr.getHostName() + ": " + tfMsg.getText());
+					wList.get(user).println(addr.getHostName() + ": " + tfMsg.getText());
 				}
 			}
 			if (cWriter != null) {
 				cWriter.println(addr.getHostName() + ": " + tfMsg.getText());
 			}
 			tfMsg.setText("");
-		} else {
+		} else if (e.getSource() == btnConn) {
 			if (client == null) {
 				StartClient(tfClient.getText(), 1978);
 				btnConn.setEnabled(false);
@@ -329,6 +371,8 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 					server = null;
 				}
 			}
+		} else if (e.getSource() == mi) {
+			JOptionPane.showMessageDialog(null, sets);
 		}
 	}
 }
