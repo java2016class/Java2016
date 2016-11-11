@@ -73,6 +73,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 		MenuBar mb = new MenuBar();
 		Menu clients = new Menu("Clients");
 		mi = new MenuItem("Show Client list");
+		sets.add(addr.getHostName());
 		lbUser = new JLabel(addr.getHostName());
 		lbServer = new JLabel("Server : ");
 		lbServerStatus = new JLabel("Not start");
