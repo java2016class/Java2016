@@ -176,7 +176,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 											// }
 											ta.setCaretPosition(ta.getDocument().getLength());
 											if (line.contains("離開聊天")) {
-
+												wList.remove(line.split(":")[0]);
 												serverIO.close();
 												serverIO = null;
 											}
@@ -247,7 +247,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 					// TODO Auto-generated catch block
 					System.out.println(getClass().getSimpleName() + " " + "IO Exception : " + e.getMessage());
 				} finally {
-					cWriter.println(addr.getHostName() + " 離開聊天室");
+					cWriter.println(addr.getHostName() + ": 離開聊天室");
 					cWriter = null;
 					read = false;
 					try {
