@@ -61,7 +61,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 		lbServer = new JLabel("Server : ");
 		lbServerStatus = new JLabel("Not start");
 		lbClient = new JLabel("Client : ");
-		tfClient = new JTextField("192.168.64.6");
+		tfClient = new JTextField("192.168.64.106");
 		btnConn = new JButton("Connect");
 		ta = new JTextArea();
 		JScrollPane scr = new JScrollPane(ta);
