@@ -219,6 +219,9 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 							System.out.println("讀取資料");
 							line = br.readLine();
 							if (line != null) {
+								if (line.contains(addr.getHostName())) {
+									continue;
+								}
 								ta.append(line + "\n");
 								ta.setCaretPosition(ta.getDocument().getLength());
 							}
