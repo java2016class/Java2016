@@ -17,6 +17,8 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -41,7 +43,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 	int count = 0;
 	int serverPort = 1978;
 	PrintWriter sWriter, cWriter;
-	ArrayList<PrintWriter> wList = new ArrayList<>();
+	Map<String, PrintWriter> wList = new HashMap<>();
 	Socket client;
 	boolean read = true;
 	static InetAddress addr;
@@ -155,7 +157,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 									sWriter = new PrintWriter(
 											new OutputStreamWriter(serverIO.getOutputStream(), StandardCharsets.UTF_8),
 											true);
-									wList.add(sWriter);
+									wList.put(serverIO.getInetAddress().getHostName(), sWriter);
 									BufferedReader reader = new BufferedReader(
 											new InputStreamReader(serverIO.getInputStream(), "UTF-8"));
 
@@ -163,11 +165,18 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 										String line = reader.readLine();
 										if (line != null) {
 											ta.append(line + "\n");
-											for (PrintWriter printWriter : wList) {
-												printWriter.println(line);
+											for (String user : wList.keySet()) {
+												if (!line.split(":")[0].equals(user)) {
+													wList.get(user).println(line);
+												}
 											}
+											// for (PrintWriter printWriter :
+											// wList) {
+											// printWriter.println(line);
+											// }
 											ta.setCaretPosition(ta.getDocument().getLength());
 											if (line.contains("離開聊天")) {
+
 												serverIO.close();
 												serverIO = null;
 											}
