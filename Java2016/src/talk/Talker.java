@@ -304,7 +304,9 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 		if (e.getSource() == btnSend) {
 			ta.append(tfMsg.getText() + "\n");
 			if (sWriter != null) {
-				sWriter.println(addr.getHostName() + ": " + tfMsg.getText());
+				for (String user : wList.keySet()) {
+						wList.get(user).println(addr.getHostName() + ": " + tfMsg.getText());
+				}
 			}
 			if (cWriter != null) {
 				cWriter.println(addr.getHostName() + ": " + tfMsg.getText());
