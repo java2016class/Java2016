@@ -289,7 +289,7 @@ public class Talker extends JFrame implements ActionListener, KeyListener {
 			tfMsg.setText("");
 		} else {
 			if (client == null) {
-				StartClient(tfClient.getText(), 1979);
+				StartClient(tfClient.getText(), 1978);
 				btnConn.setEnabled(false);
 				try {
 					server.close();
