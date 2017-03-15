@@ -9,11 +9,15 @@ import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetEncoder;
+import java.nio.charset.StandardCharsets;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -61,7 +65,7 @@ public class Talker3 extends JFrame implements ActionListener, KeyListener {
 		lbServer = new JLabel("Server : ");
 		lbServerStatus = new JLabel("Not start");
 		lbClient = new JLabel("Client : ");
-		tfClient = new JTextField("192.168.43.79:1978");
+		tfClient = new JTextField(addr.getHostAddress()+":1979");
 		btnConn = new JButton("Connect");
 		ta = new JTextArea();
 		JScrollPane scr = new JScrollPane(ta);
@@ -149,7 +153,8 @@ public class Talker3 extends JFrame implements ActionListener, KeyListener {
 									btnConn.setEnabled(false);
 									lbServerStatus.setText(serverIO.getInetAddress().getHostAddress() + "connected");
 									ta.append(serverIO.getInetAddress().getHostName() + " 加入聊天室\n");
-									sWriter = new PrintWriter(serverIO.getOutputStream(), true);
+//									sWriter = new PrintWriter(serverIO.getOutputStream(), true);
+									sWriter = new PrintWriter(new OutputStreamWriter(serverIO.getOutputStream(), StandardCharsets.UTF_8),true);
 									BufferedReader reader = new BufferedReader(
 											new InputStreamReader(serverIO.getInputStream(), "UTF-8"));
 
@@ -193,7 +198,8 @@ public class Talker3 extends JFrame implements ActionListener, KeyListener {
 				String[] ips = ip.split(":");
 				try {
 					client = new Socket(ips[0], Integer.parseInt(ips[1]));
-					cWriter = new PrintWriter(client.getOutputStream(), true);
+//					cWriter = new PrintWriter(client.getOutputStream(), true);
+					cWriter = new PrintWriter(new OutputStreamWriter(client.getOutputStream(), StandardCharsets.UTF_8),true);
 					BufferedReader br = new BufferedReader(new InputStreamReader(client.getInputStream(), "UTF-8"));
 					cWriter.println("測試");
 					read = true;
